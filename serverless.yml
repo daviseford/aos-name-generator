@@ -64,12 +64,23 @@ functions:
       - http:
            path: /
            method: get
+           cors: 
+            origin: 'https://daviseford.com'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
   seraphon:
     handler: handler.seraphon
     events:
       - http:
            path: /seraphon
            method: get
+           cors: true
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
