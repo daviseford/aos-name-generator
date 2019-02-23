@@ -63,17 +63,17 @@ functions:
     events:
       - http:
            path: /
-           method: get
-           cors: 
-            origin: 'https://daviseford.com'
-            headers:
-              - Content-Type
-              - X-Amz-Date
-              - Authorization
-              - X-Api-Key
-              - X-Amz-Security-Token
-              - X-Amz-User-Agent
-            allowCredentials: false
+           method: post
+           cors: true
+            # origin: 'https://daviseford.com'
+            # headers:
+            #   - Content-Type
+            #   - X-Amz-Date
+            #   - Authorization
+            #   - X-Api-Key
+            #   - X-Amz-Security-Token
+            #   - X-Amz-User-Agent
+            # allowCredentials: false
   seraphon:
     handler: handler.seraphon
     events:

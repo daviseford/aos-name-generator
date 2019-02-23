@@ -8,8 +8,12 @@
 
 ### 2. Start offline server
 
-`sls offline start`
+```bash
+sls offline start
+```
 
 ### 3. Deploy
 
-`sls deploy`
+```bash
+sls deploy
+```
