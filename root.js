@@ -14,7 +14,7 @@ module.exports = async (event, context) => {
         name = lib_index[body.faction].generate()
         statusCode = 200
     } catch (e) {
-        err = JSON.stringify(e)
+        err = e
     }
 
     return res(statusCode, { name, err })
